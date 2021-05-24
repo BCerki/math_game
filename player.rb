@@ -1,10 +1,14 @@
 
 class Player
-attr_accessor :lives_remaining
+attr_accessor :number, :lives_remaining
 
-  def initialize
+  def initialize(number)
+    @number = "Player #{number}"
     @lives_remaining = 3
   end
 
+  def reduce_lives
+    @lives_remaining -= 1
   end
+end
 
