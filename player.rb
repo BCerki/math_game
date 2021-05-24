@@ -1,6 +1,6 @@
 
 class Player
-attr_accessor :lives_remaining, :current_player
+attr_accessor :lives_remaining
 
   def initialize
     @lives_remaining = 3
